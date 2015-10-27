@@ -1,0 +1,12 @@
+{
+    "name": "user/p1",
+    "authors": [
+        {
+            "name": "thesiv95",
+            "email": "091995_mail@mail.ru"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^5.2"
+    }
+}

@@ -1,0 +1,178 @@
+#to_popup {display: none;}
+
+.popup-bg {
+	position: fixed;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 98;
+	background-color: rgba(0, 0, 0, 0.7);
+	cursor: pointer;
+	display: none;
+}
+.f_addproject{
+	z-index: 100;
+	position: fixed;
+	top:0;
+	display: block;
+	width: 362px;
+	background: #eff3f7;
+	display: none;
+}
+.popup{
+	width: 362px;
+	display: block;
+	margin:0 auto;
+}
+.popwrap{
+	width: 320px;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.pophead{
+	height: 50px;
+	border-radius: 3px;
+	background-color: #48cbe8;
+	margin-bottom: 27px;
+}
+.btnclose{
+	display: block;
+	cursor: pointer;
+	margin-top: 10px;
+	float: right;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/close.png);
+	background-repeat: no-repeat;
+}
+.popheader{
+	float: left;
+	font-family: 'fira_sansbook';
+	font-size: 25px;
+	font-weight: normal;
+	color: #fff;
+	line-height: 50px;
+	margin:0;
+	margin-left: 12px;
+
+}
+.popinp{
+	display: block;
+	margin: 0 auto;
+	height: 40px;
+	width: 320px;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+	box-sizing: border-box;
+	margin: 0 20px;
+	padding: 0 10px;
+	color: #48cbe8;
+}
+.fileinput{
+	z-index: 2;
+	display: block;
+	position: relative;
+	opacity: 0;
+	cursor: pointer;
+	margin: 0 20px;
+}
+.placeh{
+	color: #48cbe8;
+	margin: 0 20px;
+	padding: 0;
+	height: 40px;
+	width: 320px;
+	display: block;
+	position: absolute;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	border: 1px solid #48cbe8;
+	background-image: url(../img/choose.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.poplabel{
+	font-family: "fira_sansbook";
+	margin: 0 20px;
+	font-size: 17px;
+	color: #959aa8;
+	font-weight: normal;
+}
+.poparea{
+	border-radius: 3px;
+	border: solid 1px #48cbe8;
+	color: #48cbe8;
+	display: block;
+	resize:none;
+	width: 320px;
+	min-height: 111px;
+	box-sizing:border-box;
+	padding: 5px 10px;
+	margin: 0 20px;
+}
+.buttonpop{
+	background-color: #48cbe8;
+	border-radius: 7px;
+	font-family: "fira_sansbook";
+	display: block;
+	margin: 0 auto;
+	width: 140px;
+	height: 33px;
+	margin-top: 18px;
+	margin-bottom: 22px;
+	font-size: 19px;
+	color: #fff;
+	border:none;
+	box-shadow: 0 4px #3ba8c0;
+}
+.buttonpop:hover{
+	box-shadow: none;
+}
+.buttonpop:active{
+	box-shadow: 0 -4px #3ba8c0;
+}
+.buttonpop, .buttonpop:active,
+.buttonpop:focus{
+    outline: none;
+}
+*::-webkit-input-placeholder { 
+	color: #48cbe8; 
+}
+
+.msg-ok {
+font-family: "fira_sanslight";
+font-weight: normal;
+font-style: normal;
+width: 319px;
+height: 62px;
+background-color: #c3e9d4;
+border: 2px solid #49bb7b;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+color: #49bb7b;
+}
+
+.msg-ok-title, .msg-error-title {
+font-size: 25px;
+}
+
+.msg-ok-msg, .msg-error-msg {
+font-size: 15px;
+}
+
+.msg-error {
+font-family: "fira_sanslight";
+font-weight: normal;
+font-style: normal;
+width: 319px;
+height: 62px;
+background-color: #fdd5d2;
+border: 2px solid #f97e76;
+border-radius: 2px;
+-moz-border-radius: 2px;
+-webkit-border-radius: 2px;
+color: #f97e76;
+}

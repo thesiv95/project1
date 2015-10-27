@@ -1,0 +1,95 @@
+.login-form {
+	width: 591px;
+	height: 488px;
+	display: block;
+	margin: 100px auto;
+	padding:0;
+	border-radius: 3px;
+	background-color: #eff3f7;
+}
+
+.login-form-header {
+    font-size: 40px;
+    font-family: 'fira_sansbook', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    background-color: #48cbe8;
+    border-bottom: 14px solid #67dffa;
+}
+
+.login-form-title {
+	margin-top: 30px;
+}
+
+.login-form-label {
+	font-family: 'fira_sanslight';
+	font-size: 36px;
+	color: #4a545d;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.login-form-controls {
+	text-align: center;
+	line-height: 40px;
+}
+
+.login-form-checkbox {
+	font-size: 15px;
+}
+
+.login-form-input {
+	display: block;
+	margin: 0 auto;
+	height: 63px;
+	width: 426px;
+	border: solid 1px #48cbe8;
+	border-radius: 3px;
+	box-sizing: border-box;
+	padding: 0 20px;
+	color: #48cbe8;
+}
+.login-form-input::-webkit-input-placeholder { 
+	color: #48cbe8; 
+}
+
+.login-form-input:-moz-placeholder {
+	color: #48cbe8;
+}
+
+.login-form-button {
+	display: block;
+	margin: 35px auto;
+	width: 226px;
+	height: 45px;
+	background-color: #48cbe8;
+	border-radius: 7px;
+	font-family: "fira_sansbook";
+	font-size: 35px;
+	color: #fff;
+	border:none;
+	box-shadow: 0 4px #3ba8c0;	
+}
+.login-form-button:hover {
+	box-shadow: none;
+}
+.login-form-button:active {
+	box-shadow: 0 -4px #3ba8c0;
+}
+
+.login-form-button:focus {
+	box-shadow: 0 -4px #3ba8c0;
+}
+
+.sdvig {
+	position: relative;
+	top: -13px;
+}
+
+.wrong {
+	background: #fad6d4;
+}
