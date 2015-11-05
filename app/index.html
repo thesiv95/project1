@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ie режим совместимости -->
+    <title>Сайт-портфолио</title>
+    <!-- SEO -->
+    <meta name="description" content="Личное портфолио Соловейчика Ильи Владимировича">
+    <meta name="keywords" content="loftschool, homework, project, first">
+    <meta name="author" content="SIV">
+    <!-- vendor CSS -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+    <!-- fonts CSS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- CSS страницы-->
+    <link rel="stylesheet" href="css/my_work_page.css">
+    <link rel="stylesheet" href="css/about_me_page.css">
+    <link rel="stylesheet" href="css/contact_me.css">
+    <!-- CSS общие стили-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/form_elements.css">
+    <!-- modernizer -->
+    <script src="bower/modernizer/modernizr.js"></script>
+</head>
+
+<body>
+<!--[if lt IE 8]>
+<p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
+<![endif]-->
+
+<div class="wrapper">
+    <div class="main-content">
+        <!-- Шапка -->
+        <header class="page-header">
+            <div class="container-big">
+                <a href="/" class="header-logo-link">
+                    <img src="img/logo.png" alt="logo" class="logo-img">
+                    <span class="header-logo-text">Сайт портфолио</span>
+                </a>
+                <ul class="socials">
+                    <li class="socials-item">
+                        <a href="http://vk.com/thesiv95" target="_blank" class="socials-link vk">Вконтакте</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://twitter.com/thesiv95" target="_blank" class="socials-link tw">Twitter</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://facebook.com/thesiv95" target="_blank" class="socials-link fb">Facebook</a>
+                    </li>
+                    <li class="socials-item">
+                        <a href="https://github.com/thesiv95" target="_blank" class="socials-link gt">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- / Шапка -->
+            <div class="container">
+                <!-- Левые блоки -->
+                <aside class="sidebar">
+                    <!-- Навигация -->
+                    <nav class="navigation">
+                        <ul class="navigation-list">             
+                            <li class="navigation-item current">
+                                <a class="navigation-link" href="index.html">Обо мне</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="my-work.html">Мои работы</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="contact-me.html">Связаться со мной</a>
+                            </li>
+                        </ul>
+                    </nav> 
+                    <!-- / Навигация -->
+                    <!-- Контакты -->
+                    <address class="contacts">
+                        <div class="contacts-header">
+                            <span class="header-inner-text">Контакты</span>
+                        </div>
+                        <ul class="contacts-list">
+                            <li class="contacts-item contacts-item-mail">
+                                <a class="contacts-link" href="mailto:091995_mail@mail.ru">
+                                    <span class="contact-text">091995_mail@mail.ru</span>
+                                </a>
+                            </li>
+                            <li class="contacts-item contacts-item-phone">
+                                <a class="contacts-link" href="tel:+79138988778">
+                                    <span class="contact-text">+79138988778</span>
+                                </a>
+                            </li>
+                            <li class="contacts-item contacts-item-skype">
+                                <a class="contacts-link" href="skype:soloveychik16">
+                                    <span class="contact-text">soloveychik16</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                    <!-- / Контакты -->
+                </aside> 
+                <!-- / Левые блоки -->
+                <!-- Изменяемый контент -->
+                <div class="variable-content">
+                    <!-- Основная информация -->
+                    <section class="aboutbox">
+                        <h2 class="aboutbox-header">Основная информация</h2>
+                        <div class="aboutbox-body clearfix">
+                                <div class="image-wrap">
+                                    <div class="avatar-box">
+                                        <img src="img/face.png" alt="userpic" class="avatar">
+                                    </div>
+                                </div>
+                                <div class="worksheet-wrap">
+                                    <ul class="worksheet-list">
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Меня зовут:</div>
+                                            <div class="worksheet-info">Соловейчик Илья Владимирович</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Мой возраст:</div>
+                                            <div class="worksheet-info">20 лет</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Мой город:</div>
+                                            <div class="worksheet-info">Новосибирск, Россия</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Моя специализация:</div>
+                                            <div class="worksheet-info">FRONTEND-разработчик</div>
+                                        </li>
+                                        <li class="worksheet-item clearfix">
+                                            <div class="worksheet-what">Ключевые навыки:</div>
+                                            <div class="worksheet-info skills">
+                                                <ul class="skills-list">
+                                                    <li class="skill-item">html</li>
+                                                    <li class="skill-item">css</li>
+                                                    <li class="skill-item">js</li>
+                                                    <li class="skill-item">gulp</li>
+                                                    <li class="skill-item">git</li>
+                                                    <li class="skill-item">scss</li>
+                                                    <li class="skill-item">jade</li>
+                                                    <li class="skill-item">php</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </section>
+                    <!-- / Основная информация -->
+                    <!-- Опыт работы -->
+                    <section class="aboutbox">
+                        <h2 class="aboutbox-header">Опыт работы</h2>
+                        <div class="aboutbox-body">
+                            <ul class="aboutbox-list">
+                                <li class="aboutbox-item icon-work">
+                                    <div class="where">ООО "Гидротехника" - Системный администратор</div>
+                                    <div class="period">Январь 2014 - Настоящее время</div>
+                                </li>
+                                <li class="aboutbox-item icon-work">
+                                    <div class="where">ОАО КБ "Региональный кредит" - Системный администратор</div>
+                                    <div class="period">Март 2015 - Апрель 2015</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- / Опыт работы -->
+                    <!-- Образование -->
+                    <section class="aboutbox">
+                        <h2 class="aboutbox-header">Образование</h2>
+                        <div class="aboutbox-body">
+                            <ul class="aboutbox-list">
+                                <li class="aboutbox-item icon-college">
+                                    <div class="where">Незаконченное высшее. НГУЭУ</div>
+                                    <div class="period">Сентябрь 2015 - по настоящее время</div>
+                                </li>
+                                <li class="aboutbox-item icon-college">
+                                    <div class="where">Среднее специальное. Бизнес-колледж НГУЭУ</div>
+                                    <div class="period">Сентябрь 2011 - Май 2015</div>
+                                </li>
+                                <li class="aboutbox-item icon-course">
+                                    <div class="where">Курсы Loftschool</div>
+                                    <div class="period">Сентябрь 2015 - по настоящее время</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- / Образование -->
+                </div>
+                <!-- / Изменяемый контент -->
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="lock">
+                <a href="login.html" class="lock-inner">Войти</a>
+            </div>
+            <div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/plugins.js"></script>
+</body>
+
+</html>

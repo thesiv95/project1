@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ie режим совместимости -->
+    <title>Сайт-портфолио</title>
+    <!-- SEO -->
+    <meta name="description" content="Личное портфолио Соловейчика Ильи Владимировича">
+    <meta name="keywords" content="loftschool, homework, project, first">
+    <meta name="author" content="SIV">
+    <!-- vendor CSS -->
+    <link rel="stylesheet" href="bower/normalize-css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+    <!-- fonts CSS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- CSS страницы-->
+    <link rel="stylesheet" href="css/my_work_page.css">
+    <link rel="stylesheet" href="css/about_me_page.css">
+    <link rel="stylesheet" href="css/contact_me.css">
+    <!-- CSS общие стили-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/form_elements.css">
+    <!-- modernizer -->
+    <script src="bower/modernizer/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста, <a href="http://browsehappy.com/">обновите</a> его.</p>
+  <![endif]-->
+    
+    <div class="wrapper">
+        <div class="main-content">
+            <!-- Шапка -->
+            <header class="page-header">
+                <div class="container-big">
+                    <a href="/" class="header-logo-link">    
+                        <img src="img/logo.png" alt="logo" class="logo-img">
+                        <span class="header-logo-text">Сайт портфолио</span>
+                    </a>
+                    <ul class="socials">
+                        <li class="socials-item">
+                            <a href="http://vk.com/thesiv95" target="_blank" class="socials-link vk">Вконтакте</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://twitter.com/thesiv95" target="_blank" class="socials-link tw">Twitter</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://facebook.com/thesiv95" target="_blank" class="socials-link fb">Facebook</a>
+                        </li>
+                        <li class="socials-item">
+                            <a href="https://github.com/thesiv95" target="_blank" class="socials-link gt">Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <!-- / Шапка -->
+            <div class="container">
+                <!-- Левые блоки -->
+                <aside class="sidebar">
+                    <!-- Навигация -->
+                    <nav class="navigation">
+                        <ul class="navigation-list">             
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="index.html">Обо мне</a>
+                            </li>
+                            <li class="navigation-item current">
+                                <a class="navigation-link" href="my-work.html">Мои работы</a>
+                            </li>
+                            <li class="navigation-item">
+                                <a class="navigation-link" href="contact-me.html">Связаться со мной</a>
+                            </li>
+                        </ul>
+                    </nav> 
+                    <!-- / Навигация -->
+                    <!-- Контакты -->
+                    <address class="contacts">
+                        <div class="contacts-header">          
+                            <span class="header-inner-text">Контакты</span>
+                        </div>
+                        <ul class="contacts-list">             
+                            <li class="contacts-item contacts-item-mail">
+                                <a class="contacts-link" href="mailto:091995_mail@mail.ru">
+                                    <span class="contact-text">091995_mail@mail.ru</span>
+                                </a>
+                            </li>
+                            <li class="contacts-item contacts-item-phone">
+                                <a class="contacts-link" href="tel:+79138988778">
+                                    <span class="contact-text">+79138988778</span>
+                                </a>
+                            </li>
+                            <li class="contacts-item contacts-item-skype">
+                                <a class="contacts-link" href="skype:soloveychik16">
+                                    <span class="contact-text">soloveychik16</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                    <!-- / Контакты -->
+                </aside> 
+                <!-- / Левые блоки -->
+                <!-- Изменяемый контент -->
+                <div class="variable-content">
+
+                    <!-- Мои работы -->
+                    <section class="aboutbox">
+                        <div class="aboutbox-header">Мои работы</div>
+                        <div class="aboutbox-body clearfix">
+                          <div class="projects-wrapper">
+                            <ul class="projects-list">
+                              <!-- Проект 1 -->
+                              <li class="projects-item">
+                                <div class="hover-img">
+                                  <img class="project-img" src="img/projects/project-1.jpg" alt="a-industry.ru">
+                                  <div class="zoom-wrapper">
+                                    <a href="http://a-industry.ru" class="zoom-link" target="_blank">a-industry.ru</a>
+                                  </div>
+                                </div>
+                                <a href="http://a-industry.ru" class="project-link" target="_blank">a-industry.ru</a>
+                                <div class="project-desc">Корпоративный, и в то же время продающий сайт строительной компании a-industry</div>
+                              </li><!-- / Проект 1 -->
+                              <!-- Проект 2 -->
+                              <li class="projects-item">
+                                <div class="hover-img">
+                                  <img class="project-img" src="img/projects/project-2.jpg" alt="домгазобетон.рф">
+                                  <div class="zoom-wrapper">
+                                    <a href="http://домгазобетон.рф" class="zoom-link" target="_blank">домгазобетон.рф</a>
+                                  </div>
+                                </div>
+                                <a href="http://домгазобетон.рф" class="project-link" target="_blank">домгазобетон.рф</a>
+                                <div class="project-desc">Продающая страница для компании lederland</div>
+                              </li><!-- / Проект 2 -->
+                              <!-- Проект 3 -->
+                              <li class="projects-item">
+                                <div class="hover-img">
+                                  <img class="project-img" src="img/projects/project-3.jpg" alt="crmconsulting.biz">
+                                  <div class="zoom-wrapper">
+                                    <a href="http://crmconsulting.biz" class="zoom-link" target="_blank">crmconsulting.biz</a>
+                                  </div>
+                                </div>
+                                <a href="http://crmconsulting.biz" class="project-link" target="_blank">crmconsulting.biz</a>
+                                <div class="project-desc">Лендинг компании "CRM Consulting", специализирующейся на точной настройке Битрикс24 под бизнес</div>
+                              </li><!-- / Проект 3 -->
+                              <!-- Проект 4 -->
+                              <li class="projects-item">
+                                <div class="hover-img">
+                                  <img class="project-img" src="img/projects/project-4.jpg" alt="landingsloft.ru">
+                                  <div class="zoom-wrapper">
+                                    <a href="http://landingsloft.ru" class="zoom-link" target="_blank">landingsloft.ru</a>
+                                  </div>
+                                </div>
+                                <a href="http://landingsloft.ru" class="project-link" target="_blank">landingsloft.ru</a>
+                                <div class="project-desc">Сайт по услугам разработки продающих лендингов</div>
+                              </li><!-- / Проект 4 -->
+                              <!-- Проект 5 -->
+                              <li class="projects-item">
+                                <div class="hover-img">
+                                  <img class="project-img" src="img/projects/project-5.jpg" alt="yasnow.biz">
+                                  <div class="zoom-wrapper">
+                                    <a href="http://yasnow.biz" class="zoom-link" target="_blank">yasnow.biz</a>
+                                  </div>
+                                </div>
+                                <a href="http://yasnow.biz" class="project-link" target="_blank">yasnow.biz</a>
+                                <div class="project-desc">Landing page по продаже франшизы снежного бизнеса</div>
+                              </li><!-- / Проект 5 -->
+                              <!-- Добавить новый проект -->
+                              <li class="projects-item add-new-item">
+                                <a href="#" class="add-new-link" id="add-new-item">
+                                  <div class="add-new-text">Добавить проект</div>
+                                </a>
+                              </li><!-- / Добавить новый проект -->
+                            </ul>
+                          </div>
+                        </div>
+                    </section>
+                    <!-- / Мои работы -->
+
+                </div>
+                <!-- / Изменяемый контент -->
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="lock">
+                <a href="login.html" class="lock-inner">Войти</a>
+            </div>
+            <div class="copyright">&copy; 2015. Это сайт, с помощью которого я прокачивал скилл в CSS-вёрстке</div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <!-- Добавить новый проект -->       
+    <div id="new-progect-popup">
+      <div class="modal-wrapper">
+        <div class="modal-header">
+          <button type="button" class="b-close"></button>
+          <h4 class="modal-title">Добавление проекта</h4>
+        </div>
+        <div class="modal-body">
+          <form id="add-new-project" class="form" role="form">  
+          <!-- Вывод сообщений с сервера -->
+          <div class="server-mes error-mes"></div>
+          <div class="server-mes success-mes"></div>
+          <!-- Название проекта -->
+          <div class="form-group">
+            <label for="projectName" class="label">Название проекта</label>
+            <input type="text" name="projectName" class="input" id="projectName" placeholder="Введите название" qtip-content="Вы не ввели название">
+          </div>      
+          <!-- Картинка проекта -->
+          <div class="form-group">
+            <div class="fileupload-wrapper" id="uploadfile">
+            <span class="label">Картинка проекта</span>
+            <label class="fileupload-lable">
+              <input id="fileupload" class="fileupload" type="file" name="files[]">
+              <input id="fileurl" type="hidden" name="fileurl">
+            </label>
+            <input id="filename" type="text" class="input" name="filename" placeholder="Загрузите изображение" disabled qtip-content="Вы не выбрали изображение">
+            </div>
+          </div>
+          <!-- URL проекта -->
+          <div class="form-group">
+            <label for="projectUrl" class="label">URL проекта</label>
+            <input type="text" name="projectUrl" class="input" id="projectUrl" placeholder="Добавьте ссылку" qtip-content="Вы не добавили ссылку">
+          </div>
+          <!-- Описание -->
+          <div class="form-group">
+            <label for="projectDesc" class="label">Описание</label>
+            <textarea name="text" id="projectDesc" class="textarea" rows="3" placeholder="Пара слов о вашем проекте" qtip-content="Описание проекта обязательно"></textarea>
+          </div>
+          <!-- Кнопка "Отправить" -->
+            <div class="btn-wrapp">
+              <button type="submit" class="btn">Добавить</button>
+            </div>      
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- / МОДАЛЬНОЕ ОКНО -->
+    <!-- / Добавить новый проект --> 
+
+    <!-- vendor JS -->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/bpopup/jquery.bpopup.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
+    <!-- JS -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/add_project.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+

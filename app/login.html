@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- ie режим совместимости -->
+    <title>Сайт-портфолио</title>
+    <!-- SEO -->
+    <meta name="description" content="Личное портфолио Соловейчика Ильи Владимировича">
+    <meta name="keywords" content="loftschool, homework, project, first">
+    <meta name="author" content="SIV">
+    <!-- vendor CSS -->
+    <link rel="stylesheet" href="bower/normalize.css/normalize.css">
+    <link rel="stylesheet" href="bower/qtip2/jquery.qtip.css">
+    <!-- fonts CSS -->
+    <link rel="stylesheet" href="fonts/fira.css">
+    <link rel="stylesheet" href="fonts/proximanovacond-semibold.css">
+    <!-- CSS страницы-->
+    <link rel="stylesheet" href="css/my_work_page.css">
+    <link rel="stylesheet" href="css/about_me_page.css">
+    <link rel="stylesheet" href="css/contact_me.css">
+    <link rel="stylesheet" href="css/login.css">
+    <!-- CSS общие стили-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/form_elements.css">
+    <!-- modernizer -->
+    <script src="bower/modernizer/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+    <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста<a href="http://browsehappy.com/">обновите</a> его.</p>
+  <![endif]-->
+    
+    <div class="wrapper">
+        <div class="main-content">
+			<!-- Главный контейнер -->
+			<div class="login-container">  
+				<div class="modal-wrapper login-wrapper">
+    			    <div class="modal-header">
+    			    	<h2 class="modal-title">Авторизуйтесь</h2>
+    			    </div>
+			        <div class="modal-body">
+    					<form id="login" class="form" role="form">   
+    						<!-- Вывод сообщений с сервера -->
+                            <div class="server-mes error-mes"></div>
+                            <div class="server-mes success-mes"></div>
+                            <!-- Название проекта -->
+                            <div class="form-group">
+                                <label for="login" class="label">Логин</label>
+                                <input type="text" name="login" class="input" id="name" placeholder="Введите логин" qtip-content="Вы не ввели логин">
+                            </div>
+                            <!-- Картинка проекта -->
+                            <div class="form-group">
+                                <label for="password" class="label">Пароль</label>
+                                <input type="password" name="password" class="input" id="password" placeholder="Введите пароль" qtip-content="Вы не ввели пароль">
+                            </div>
+                            <!-- Кнопка "Отправить" -->
+                            <button type="submit" class="btn">Войти</button>    
+                        </form>
+					</div>   
+				</div>   
+			</div> 
+	    </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="lock">
+                <a href="login.html" class="lock-inner">Войти</a>
+            </div>
+            <div class="copyright">© 2015, Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>
+        </div>
+    </footer>
+
+    <!-- vendor JS -->
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/bpopup/jquery.bpopup.js"></script>
+    <script src="bower/qtip2/jquery.qtip.js"></script>
+    <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
+    <!-- JS -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
+

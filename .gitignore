@@ -1,0 +1,8 @@
+app/bower
+node_modules
+dist
+/vendor/
+app/composer.json
+app/composer.lock
+app/composer.phar
+.idea/

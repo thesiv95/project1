@@ -1,0 +1,131 @@
+.form-wrapper {
+    /*width: 650px;*/
+    height: 655px;
+    margin: 0 40px;
+    padding-bottom: 199px;
+    display: block;
+    width: 402px;
+    margin:0 auto;
+}
+
+.form-receiver {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.form-name-label {
+    font-family: "fira_sanslight";
+    font-size: 19px;
+    color: #959aa8;
+    font-weight: normal;
+}
+
+.form-name-input {
+    display: block;
+    height: 40px;
+    width: 191px;
+    border: solid 1px #48cbe8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    color: #48cbe8;
+    resize: none; /* not for IE, of course */
+    
+}
+
+.big {
+    width: 398px;
+    height: 107px;
+}
+
+/* http://habrahabr.ru/post/120152/ */
+
+.form {
+    margin-top: 50px;
+}
+
+.form-name-input::-webkit-input-placeholder {
+    color: #48cbe8;
+}
+.form-name-input:-moz-placeholder {
+    color: #48cbe8;
+}
+
+
+.form-name, .form-captcha-view, .form-button-submit, .form-button-wrap1 {
+    float: left;
+}
+
+.form-email, .form-captcha-code, .form-button-reset, .form-button-wrap2 {
+    float: right;
+}
+
+.form-email {
+    margin-left: 20px;
+}
+
+.form-captcha-image {
+    border: 1px solid #48cbe8;
+}
+
+.form-button {
+    border-radius: 7px;
+    font-family: "fira_sansbook";
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: 33px;
+    margin-bottom: 22px;
+    font-size: 19px;
+    color: #fff;
+    box-shadow: 0 4px;
+}
+
+.form-button:hover {
+    box-shadow: 0 0;
+}
+
+.form-button:focus {
+    box-shadow: 0 0;
+}
+
+.form-button:active {
+    box-shadow: 0 0;
+}
+
+.b-submit {
+    background: #48cbe8;
+}
+
+.b-reset {
+    background: #849db5;
+}
+
+.cm-header {
+    height: 138px;
+    border-radius: 3px;
+    background-color: #48cbe8;
+    margin-bottom: 50px;
+    
+}
+
+.cm-header-text {
+    font-family: 'fira_sansbook';
+    font-size: 27px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 128px;
+    margin: 0;
+    margin-left: 60px;
+}
+
+.cm-header-line {
+    margin-top: -3px;
+    height: 18px;
+    background: #67dffa;
+}
+
+.wrong {
+    background: #fad6d4;
+}
