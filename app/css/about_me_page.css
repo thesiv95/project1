@@ -1,3 +1,4 @@
+/* Общие стили для всех секций */
 .aboutbox{
 	background: #eff3f7;
 	border-radius: 4px;
@@ -16,7 +17,11 @@
 .aboutbox-body{
 	padding-bottom: 40px;	
 }
+/* Общие стили для всех секций - конец */
 
+
+
+/* Лицо */
 .image-wrap{	
 	float: left;
 	margin-left: 55px;
@@ -32,7 +37,10 @@
 .avatar{
 	width: 100%;
 }
+/* Лицо - конец */
 
+
+/* Список анкетных данных */
 .aboutbox .worksheet-wrap{
 	float: right;
   width: 400px;
@@ -52,16 +60,20 @@
 }
 .worksheet-what {
 	font-family: 'fira_sansmedium';
-  font-size: 15px;
+  font-size: 16px;
   float: left;
 }
 .worksheet-info{
 	font-family: 'fira_sansbook';
-  font-size: 14px;
+  font-size: 15px;
   overflow: hidden;
   max-width: 218px;
 }
+/* Список анкетных данных - конец */
 
+
+
+/* Ключевые навыки */
 .worksheet-info .skills-list{	
 	width: 224px;
 	padding: 0;
@@ -88,6 +100,8 @@
 	text-align: center;
 }
 
+
+/* Опыт работы и образование*/
 .aboutbox .aboutbox-list{
 	list-style: none;
 	padding: 0 0 0 50px;

@@ -1,4 +1,4 @@
-
+/* _____________ Существующие проекты и подписи _________ */
 .projects-wrapper{
 	margin: 0 20px;
 }
@@ -72,7 +72,7 @@
 	margin: 5px 0;
 	line-height: 1.2;
 }
-
+/* Старый ei (для него пишем другую анимацию)*/
 .lt-ie9 .menu ul li{
 	border-bottom: none;
 }
@@ -85,8 +85,11 @@
 .lt-ie9 .my-work .item:hover .zoom-wrapper {	
 	display: block;
 }
+/* // Старый ei */
+/* _____________ // Существующие проекты и подписи _________ */
 
 
+/* _____________ Добавить проект _________ */
 .add-new-item{	
 	border: dashed 1px #3ba8c0;
 	border-radius: 4px;
@@ -134,9 +137,12 @@
 	from { transform: translateY(200%); opacity: 0;}
     to { transform: translateY(0%); opacity: 1;}
 }
+/* _____________ // Добавить проект _________ */
 
+
+/* Прячем модальное окно */
 #new-progect-popup { 
-	display:none;
+	display:none; 
 }
 
 

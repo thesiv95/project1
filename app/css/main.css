@@ -9,11 +9,13 @@ body {
 }
 
 
+
+/* прибьём футер к низу*/
 .wrapper{
 	position: relative;
 	min-height: 100%;
-	min-width: 970px;
-	height: auto !important;
+	min-width: 970px; /* обязательно указать минимальную ширину примерно на 10 пикселей шире контейнера*/
+	height: auto!important;
 	overflow: hidden;
 }
 .wrapper:after {
@@ -25,8 +27,11 @@ body {
 	height: 80px;
 	margin-top: -80px;	
 }
+/* прибьём футер к низу - конец*/
 
 
+
+/* Шапка */
 .container-big {
   max-width: 1200px;
   min-width: 960px;
@@ -54,7 +59,11 @@ body {
 	right: 0;
 	top: 36px;	
 }
+/* Шапка - конец */
 
+
+
+/* Блок социальных ссылок */
 .socials{
 	margin: 0;
 	padding: 0;
@@ -66,9 +75,11 @@ body {
   height: 47px;
   width: 47px;
   margin-left: 19px;
+  /* Отступ у таких элементов всегда слева */
 }
 .socials .socials-item:first-child {
   margin-left: 0;
+  /* А у первого элемента обнуляем отступ */
 }
 .socials .socials-link {display: block;
   height: 100%;
@@ -81,12 +92,19 @@ body {
 .socials .socials-link.fb {background-position: -140px -3px; }
 .socials .socials-link.gt {background-position: -209px -3px; }
 .socials .socials-link:hover {background-position-y: -65px; }
+/* Блок социальных ссылок - конец */
 
+
+
+/* Сайдбар */
 .sidebar {
 	width: 250px;
 	float: left;
 }
 
+
+
+/* Навигация */
 .navigation{
 	overflow: hidden;
 	background: #eff3f7;
@@ -105,7 +123,7 @@ body {
 .navigation .navigation-item:first-child{
 	border-top: none;
 }
-
+/* Навигация - текущий пункт меню*/
 .navigation .navigation-item.current{	
 	background: #3ba8c0;
 	margin: 0;
@@ -118,7 +136,7 @@ body {
 	color: #f9fafb;
 	font-size: 22px;
 }
-
+/* Навигация - текущий пункт меню - конец */
 .navigation .navigation-link {
 	font-family: 'fira_sansbook';
 	display: block;
@@ -131,8 +149,11 @@ body {
 .navigation .navigation-link:hover{
 	color: #3ba8c0;
 } 
+/* Навигация - конец */
 
 
+
+/* Контакты */
 .contacts{
 	font-style: normal;
 	font-family: 'fira_sansbook';
@@ -184,13 +205,19 @@ body {
 .contacts .contact-text:hover{
 	border-bottom: 1px solid #fff;
 }
+/* Контакты - конец */
 
+
+
+/* Главная область */
 .variable-content{
 	width: 650px;
 	float: right;
 }
 
 
+
+/* Футер */
 .page-footer{	
 	background: #eff3f7 url(../img/line.png) top center no-repeat;
 	font-family: 'fira_sanslight';
@@ -206,7 +233,7 @@ body {
 	text-align: center;
 	font-size: 13px;
 }
-
+/* Логин */
 .page-footer .lock{
 	position: absolute;
 	top: 26px;
@@ -227,7 +254,12 @@ body {
 	text-decoration: underline;
 	background: url(../img/lock-open.png) no-repeat;
 }
+/* Логин - конец */
+/* Футер - конец */
 
+
+
+/* общие классы */
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -241,16 +273,17 @@ body {
 .pull-right {
 	float: right !important;
 }
-
+/* clearfix */
 .container:before, .clearfix:before,
 .container:after, .clearfix:after {
-	content: " ";
-	display: table;
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 .container:after, .clearfix:after {
   clear: both;	
 }
-
+/* clearfix - конец */
+/* общие классы - конец */
 
 
 
