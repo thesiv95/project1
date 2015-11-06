@@ -17,11 +17,7 @@
 .aboutbox-body{
 	padding-bottom: 40px;	
 }
-/* Общие стили для всех секций - конец */
 
-
-
-/* Лицо */
 .image-wrap{	
 	float: left;
 	margin-left: 55px;
@@ -37,10 +33,7 @@
 .avatar{
 	width: 100%;
 }
-/* Лицо - конец */
 
-
-/* Список анкетных данных */
 .aboutbox .worksheet-wrap{
 	float: right;
   width: 400px;
@@ -65,15 +58,11 @@
 }
 .worksheet-info{
 	font-family: 'fira_sansbook';
-  font-size: 15px;
+  font-size: 14px;
   overflow: hidden;
   max-width: 218px;
 }
-/* Список анкетных данных - конец */
 
-
-
-/* Ключевые навыки */
 .worksheet-info .skills-list{	
 	width: 224px;
 	padding: 0;

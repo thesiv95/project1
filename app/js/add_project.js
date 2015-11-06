@@ -1,7 +1,6 @@
 var addProject = (function (){
 
     var init = function(){
-            console.log('Инициализация модуля addProject');
             _setUpListeners();
         },
         _setUpListeners = function (){
@@ -51,7 +50,6 @@ var addProject = (function (){
                 dataType : 'JSON',
                 data: data
             }).fail( function(ans) {
-                console.log('Проблемы в PHP');
                 form.find('.error-mes').text('На сервере произошла ошибка').show();
             });
         };

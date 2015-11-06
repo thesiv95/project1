@@ -79,6 +79,7 @@ input, textarea, button {
 	padding: 6px 12px;
 	margin-bottom: 6px;	
 	display: none;
+	box-sizing: border-box;
 }
 .error-mes{	
 	background-color: #fad2d1;
@@ -107,24 +108,24 @@ input, textarea, button {
     color: #48cbe8;
 }
 
-/* _____________ плавное изменение прозрачности  placeholder-а при фокусе _________ */
-.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.4s ease;}
-.input::-moz-placeholder                {opacity: 1; transition: opacity 0.4s ease;}
-.input:-moz-placeholder                 {opacity: 1; transition: opacity 0.4s ease;}
-.input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.4s ease;}
-.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.4s ease;}
-.input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.4s ease;}
-.input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.4s ease;}
-.input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.4s ease;}
 
-.textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.4s ease;}
-.textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.4s ease;}
-.textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.4s ease;}
-.textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.4s ease;}
-.textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.4s ease;}
-.textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.4s ease;}
-.textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.4s ease;}
-.textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.4s ease;}
+.input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+.textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+.textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+.textarea:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.textarea:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.textarea:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
 /* _____________ // Элементы форм _________ */
 
 

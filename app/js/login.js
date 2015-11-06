@@ -1,54 +1,133 @@
-var loginModule = (function (){
+var validation = (function (){
 
-	var init = function(){
-				_setUpListners();
-			},
-			_setUpListners = function (){
-				$('#login').on('submit', _submitForm);
-			},
-			_submitForm = function (ev) {
-	      console.log('Работаем с формой');
+    var init = function(){
+             
+            _setUpListners();
+        },
 
-	      ev.preventDefault();
+        _setUpListners = function () {
+            $('form').on('keydown', '.has-error', _removeError);
+            $('form').on('reset', _clearForm);
+            $('form').on('submit', validateForm);
+        },
 
-	      var form = $(this),          
-	          url = '../login.php',
-	          defObject = _ajaxForm(form, url);
+        validateForm = function (form) {
+             
 
-	      if (defObject) {
-	        defObject.done(function(ans) {
-	          var mes = ans.mes,
-	              status = ans.status;
+            var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
+                valid = true;
 
-	          if ( status === 'OK'){
-	            form.trigger('reset');
-	            form.find('.success-mes').text(mes).show();           
-	          } else{
-	            form.find('.error-mes').text(mes).show();
-	          }
-	        });
-	      }
-	    },
-	    _ajaxForm = function (form, url) {
-      
-	      if (!validation.validateForm(form)) return false;
-	      var data = form.serialize();
+            $.each(elements, function(index, val) {
+                var element = $(val),
+                    val = element.val(),
+                    pos = element.attr('qtip-position');
 
-	      return $.ajax({
-	        type: 'POST',
-	        url: url,
-	        dataType : 'JSON',
-	        data: data
-	      }).fail( function(ans) {
-	        console.log('Проблемы в PHP');
-	        form.find('.error-mes').text('На сервере произошла ошибка').show();
-	      });
-	    };   
+                if(val.length === 0){
+                    element.addClass('has-error');
+                    _createQtip(element, pos);
+                    valid = false;
+                }
+
+            });
+
+            return valid;
+        },
+
+        _removeError = function() {
+
+            $(this).removeClass('has-error');
+        },
+        _clearForm = function(form) {
+
+
+            var form = $(this);
+            form.find('.input, .textarea').trigger('hideTooltip');
+            form.find('.has-error').removeClass('has-error');
+            form.find('.error-mes, success-mes').text('').hide();
+        },
+        _createQtip = function (element, position) {
+
+
+            if (position === 'right') {
+                position = {
+                    my: 'left center',
+                    at: 'right center'
+                }
+            }else{
+                position = {
+                    my: 'right center',
+                    at: 'left center',
+                    adjust: {
+                        method: 'shift none'
+                    }
+                }
+            }
+
+
+            element.qtip({
+                content: {
+                    text: function() {
+                        return $(this).attr('qtip-content');
+                    }
+                },
+                show: {
+                    event: 'show'
+                },
+                hide: {
+                    event: 'keydown hideTooltip'
+                },
+                position: position,
+                style: {
+                    classes: 'qtip-mystyle qtip-rounded',
+                    tip: {
+                        height: 10,
+                        width: 16
+                    }
+                }
+            }).trigger('show');
+        };
+
+    return {
+        init: init,
+        validateForm: validateForm
+    };
+
+})();
+
+validation.init();
+
+
+
+
+
+var login = (function () {
+
+	var init = function () {
+		_setUpListneres();
+	};
+
+	var _setUpListneres = function () {
+		$('#form').on('submit', _submitForm);
+	};
+
+	var _submitForm = function(e) {
+		e.preventDefault();
+
+		var form = $(this),
+			url = '',
+			defObj = _ajaxForm(form, url);
+	};
+
+	var _ajaxForm = function (form, url) {
+		if (!validation.validateForm(form)) {
+			return false;
+		}
+
+	};
 
 	return {
 		init: init
 	};
-
 })();
 
-loginModule.init();
+login.init();

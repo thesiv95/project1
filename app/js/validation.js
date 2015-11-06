@@ -1,11 +1,20 @@
 var validation = (function (){
 
     var init = function(){
-            console.log('Инициализация модуля validation');
+             
             _setUpListners();
         },
-        validateForm = function (form) {
-            console.log('Проверяем форму');
+
+        _setUpListners = function () {
+            $('form').on('keydown', '.has-error', _removeError);
+            $('form').on('reset', _clearForm);
+            $('form').on('submit', validateForm);
+        },
+
+        validateForm = function (e) {
+             e.preventDefault();
+
+             var form = $(this);
 
             var elements = form.find('input, textarea').not('input[type="file"], input[type="hidden"]'),
                 valid = true;
@@ -25,10 +34,7 @@ var validation = (function (){
 
             return valid;
         },
-        _setUpListners = function () {
-            $('form').on('keydown', '.has-error', _removeError);
-            $('form').on('reset', _clearForm);
-        },
+
         _removeError = function() {
 
             $(this).removeClass('has-error');
