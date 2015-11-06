@@ -16,7 +16,7 @@
         $data['status'] = 'error';
         $data['text'] = 'Заполните имя!';
     } else {
-        $data['status'] = 'ok';
+        $data['status'] = 'OK';
         $data['text'] = 'Заполнено имя!';
     }
 
