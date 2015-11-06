@@ -1,12 +1,10 @@
-// Модуль авторизации
 var loginModule = (function (){
 
 	var init = function(){
-				console.log('Инициализация модуля loginModule');
 				_setUpListners();
 			},
 			_setUpListners = function (){
-				$('#login').on('submit', _submitForm); // отправка формы
+				$('#login').on('submit', _submitForm);
 			},
 			_submitForm = function (ev) {
 	      console.log('Работаем с формой');
@@ -14,7 +12,7 @@ var loginModule = (function (){
 	      ev.preventDefault();
 
 	      var form = $(this),          
-	          url = '/login.php',
+	          url = '../login.php',
 	          defObject = _ajaxForm(form, url);
 
 	      if (defObject) {
@@ -33,10 +31,10 @@ var loginModule = (function (){
 	    },
 	    _ajaxForm = function (form, url) {
       
-	      if (!validation.validateForm(form)) return false;  // Возвращает false, если не проходит валидацию 
-	      var data = form.serialize(); // собираем данные из формы в объект data
+	      if (!validation.validateForm(form)) return false;
+	      var data = form.serialize();
 
-	      return $.ajax({ // Возвращает Deferred Object
+	      return $.ajax({
 	        type: 'POST',
 	        url: url,
 	        dataType : 'JSON',
