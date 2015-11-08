@@ -2,7 +2,9 @@
 .aboutbox{
 	background: #eff3f7;
 	border-radius: 4px;
+	margin-left: 23px;
 	margin-bottom: 26px;
+	width: 652px;
 }
 .aboutbox .aboutbox-header{
 	font-family: 'fira_sansbook';
@@ -15,7 +17,8 @@
 	display: inline-block;
 }
 .aboutbox-body{
-	padding-bottom: 40px;	
+	/*padding-bottom: 40px;*/
+	padding-bottom: 200px;
 }
 
 .image-wrap{	

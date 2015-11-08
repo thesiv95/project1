@@ -6,6 +6,19 @@ var addProject = (function (){
         _setUpListeners = function (){
             $('#add-new-item').on('click', _showModal);
             $('#add-new-project').on('submit', _addProject);
+            $('#fileupload').on('change', _changefileUpload);
+        },
+        _getNameFromPath = function (path) {
+            return path.replace(/\\/g, '/').replace(/.*\//, '');
+        },
+        _changefileUpload = function (){
+            var input = $(this),
+                name = _getNameFromPath(input.val());
+
+            $('#filename')
+                .val(name)
+                .trigger('hideTooltip')
+                .removeClass('has-error');
         },
         _showModal = function (){
             $('#new-progect-popup').bPopup({
@@ -60,4 +73,7 @@ var addProject = (function (){
 
 })();
 
-addProject.init();
+
+if($('#add-new-project').length){
+    addProject.init();
+}

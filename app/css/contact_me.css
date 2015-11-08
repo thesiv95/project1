@@ -7,15 +7,25 @@
 	margin-bottom: 41px;
 }
 .aboutbox-header-big{
-	font-family: 'fira_sansbook';
+	/*font-family: 'fira_sansbook';
 	font-weight: normal;
 	font-size: 27px;
 	color: #ffffff;
-	border: none;
+	border: none;*/
+	padding: 0;
+    margin: 0;
+    text-align: center;
+    height: 25px;
+    font-size: 27px;
+    font-family: 'fira_sansbook', sans-serif;
+    color: #fff;
+    font-weight: normal;
+    background-color: #48cbe8;
 }
 .contact-form-wrap{
-	width: 402px;
+	width: 405px;
 	margin: 0 auto;
+	padding-top: 20px;
 }
 .contact-form .textarea{
 	height: 182px;
